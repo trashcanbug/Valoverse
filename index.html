@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ValorVerse</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <label class="switch">
+  <input type="checkbox" id="themeToggle">
+  <span class="slider round"></span>
+</label>
+
+  <!-- Modal -->
+  <div id="agentModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img id="modalImage" src="" alt="Agent Image" />
+      <h2 id="modalTitle">Agent Name</h2>
+      <p id="modalDescription">Agent description goes here...</p>
+      <audio id="agentAudio" controls style="width: 100%; display: none;"></audio>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ValorVerse</div>
+    <nav class="nav-links">
+      <a href="#agents">Agents</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-banner">
+    <h1>Explore the World of Valorant Agents</h1>
+    <p>From Duelists to Controllers, meet the heroes of Valorant</p>
+  </section>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for an agent...">
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Duelist">Duelists</button>
+    <button class="filter-btn" data-filter="Controller">Controllers</button>
+    <button class="filter-btn" data-filter="Initiator">Initiators</button>
+    <button class="filter-btn" data-filter="Sentinel">Sentinels</button>
+  </div>
+
+  <!-- Agents Grid -->
+  <section id="agents" class="agents-grid">
+    <!-- Cards dynamically inserted -->
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About ValorVerse</h2>
+    <p>ValorVerse showcases all the agents in the tactical shooter Valorant, their abilities, and detailed profiles.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <p>© 2025 ValorVerse. All rights reserved.</p>
+  </footer>
+</body>
+</html>
